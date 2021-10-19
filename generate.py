@@ -3,12 +3,12 @@ d = []
 n = 100
 
 for i in range(n):
-#    x = {"name": "fff"+str(i), "age": i*2, "height": i+100, "weight": 10*i, "wealth": 1000*i}
-    x = "fff" + str(i) + "," + str(i*2) + "," + str(i+100) + "," + str(10*i) +  "," + str(1000*i)
-    d.append(x)
+    x = {"name": "fff"+str(i), "age": i*2, "height": i+100, "weight": 10*i, "wealth": 1000*i}
+    temp = [ x["name"], str(x["age"]), str(x["height"]), str(x["weight"]), str(x["wealth"]) ]
+    temp = ",".join(temp)
+    d.append(temp)
 
-s = ("\n").join(d)
-print(s)
+s = "\n".join(d)
 
 with open("testdata.csv", "w+") as f: f.write(s)
 
