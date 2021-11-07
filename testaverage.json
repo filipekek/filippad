@@ -1,0 +1,12 @@
+{
+    "name": "average",
+    "physical": {
+        "age": 46.5,
+        "height": 13.5,
+        "weight": 33.5
+    },
+    "financial": {
+        "wealth": 5850,
+        "income": 2250
+    }
+}
