@@ -5,6 +5,9 @@ with open("testdata.json") as json_file:
     z = json.load(json_file)
 
 
+physical_categories = list( z[0]['physical'].keys() )
+financial_categories = list( z[0]['financial'].keys() )
+
 a = {'name': 'average', 'physical': {'age':[],'height':[],'weight'}, 'financial':{'wealth':[],'income':[]}}
 
 all_ages = []
