@@ -4,6 +4,8 @@ import statistics
 with open("testdata.json") as json_file:
     z = json.load(json_file)
 
+physical_categories = list( z[0]['physical'] )
+financial_categories = list( z[0]['financial'] ) 
 
 a = {'name': 'average', 'physical': {'age':[],'height':[],'weight'}, 'financial':{'wealth':[],'income':[]}}
 
